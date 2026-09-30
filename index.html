@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Rangga Wisnu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        .cv-container {
+            transition: all 0.3s ease;
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white; padding: 0; }
+            .cv-container { box-shadow: none; margin: 0; width: 100%; max-width: 100%; border-radius: 0; }
+        }
+
+        .skill-tag {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            color: #334155;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 3px;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background: #2563eb;
+            border-radius: 2px;
+        }
+
+        .ready-badge {
+            background: #dcfce7;
+            color: #166534;
+            padding: 3px 10px;
+            border-radius: 99px;
+            font-size: 11px;
+            font-weight: bold;
+            border: 1px solid #bbf7d0;
+            display: inline-block;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body class="py-10 px-4 md:px-0">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-3xl overflow-hidden cv-container">
+        <!-- Header Section -->
+        <div class="bg-slate-900 text-white p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+            <div class="text-center md:text-left flex-1">
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-none mb-2">RANGGA WISNU</h1>
+                <p class="text-blue-400 font-semibold text-base md:text-lg mb-6">Staf Operasional | Retail & FnB Service | Logistik / Packing</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-slate-300">
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-blue-400 text-xs"></i>
+                        </div>
+                        0813-3266-2786 / 0851-9626-4287
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-blue-400 text-xs"></i>
+                        </div>
+                        Muliaaestheticfashion2@gmail.com
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start gap-3 sm:col-span-2">
+                        <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-location-dot text-blue-400 text-xs"></i>
+                        </div>
+                        Pameungpeuk, Kab. Bandung, Jawa Barat
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-print">
+                <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow-lg">
+                    <i class="fas fa-print"></i> Cetak / Simpan PDF
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12">
+            <!-- Left Column -->
+            <div class="md:col-span-4 bg-slate-50 p-6 md:p-8 border-r border-slate-100">
+                
+                <!-- Kesiapan Posisi -->
+                <div class="mb-8">
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Kesiapan Posisi</h2>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="ready-badge">Retail & Pramuniaga</span>
+                        <span class="ready-badge">Waiter / Server FnB</span>
+                        <span class="ready-badge">Staf Packing / Gudang</span>
+                        <span class="ready-badge">Kurir / Courier FnB</span>
+                    </div>
+                </div>
+
+                <!-- Informasi Pribadi -->
+                <div class="mb-8">
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Biodata Diri</h2>
+                    <div class="space-y-3 text-xs text-slate-600">
+                        <div>
+                            <p class="font-bold text-slate-800">Tempat, Tanggal Lahir:</p>
+                            <p>Bandung, 30 Juli 2005</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-800">Alamat Domisili:</p>
+                            <p>Jl. Rancakasiat, Kav. Rancamakmur Blok D48, RT 002 / RW 004, Kel. Rancamulya, Kec. Pameungpeuk, Kab. Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pendidikan -->
+                <div class="mb-8">
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Pendidikan</h2>
+                    <div class="relative pl-4 border-l-2 border-blue-600">
+                        <p class="font-bold text-slate-800 text-sm">SMA Langlang Buana</p>
+                        <p class="text-xs text-slate-500">Lulusan SMA</p>
+                    </div>
+                </div>
+
+                <!-- Keahlian Utama -->
+                <div>
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Keahlian & Keterampilan</h2>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="skill-tag">Pelayanan Pelanggan</span>
+                        <span class="skill-tag">Pengayanan / Waiter FnB</span>
+                        <span class="skill-tag">Penataan Produk (Display)</span>
+                        <span class="skill-tag">Packing & QC Sepatu</span>
+                        <span class="skill-tag">Pengiriman & Rute Jalan</span>
+                        <span class="skill-tag">Manajemen Stok Barang</span>
+                        <span class="skill-tag">Kas Masuk & Keluar</span>
+                        <span class="skill-tag">Ketahanan Fisik Prima</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="md:col-span-8 p-6 md:p-10">
+                <!-- Tentang Saya -->
+                <section class="mb-8">
+                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-3">
+                        <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3 text-xs">
+                            <i class="fas fa-user-check"></i>
+                        </span>
+                        Tentang Saya
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Lulusan SMA Langlang Buana yang dinamis, disiplin, dan berpengalaman di bidang pelayanan pelanggan, industri FnB, retail fashion, serta operasional logistik/pengiriman. Memiliki rekam jejak dalam melayani pembeli sebagai pramuniaga dan waiter, menangani *packing* sepatu berstandar rapi, hingga menjalankan layanan antar pesanan makanan (ShopeeFood). Pekerja keras, komunikatif, jujur, serta siap berkontribusi secara produktif dan cepat beradaptasi di lingkungan kerja yang bergerak dinamis.
+                    </p>
+                </section>
+
+                <!-- Pengalaman Kerja -->
+                <section>
+                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-4">
+                        <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3 text-xs">
+                            <i class="fas fa-briefcase"></i>
+                        </span>
+                        Pengalaman Kerja
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <!-- Retail Fashion -->
+                        <div class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
+                            <div class="absolute left-[-5px] top-1.5 w-3 h-3 bg-blue-600 rounded-full border-2 border-white"></div>
+                            <h3 class="font-bold text-slate-900 text-base">Pramuniaga & Staf Operasional Toko Fashion</h3>
+                            <p class="text-xs text-blue-600 font-semibold mb-2">Sektor Ritel Busana & Sepatu | Bandung</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
+                                <li>Melayani pelanggan dengan ramah untuk mengidentifikasi kebutuhan pakaian, celana, dan sepatu.</li>
+                                <li>Mengelola penataan etalase produk (*visual merchandising*) agar selalu rapi dan menarik.</li>
+                                <li>Melakukan pengecekan stok berkala serta memastikan ketersediaan barang di area penjualan.</li>
+                            </ul>
+                        </div>
+
+                        <!-- FnB & Waiter -->
+                        <div class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
+                            <div class="absolute left-[-5px] top-1.5 w-3 h-3 bg-slate-400 rounded-full border-2 border-white"></div>
+                            <h3 class="font-bold text-slate-900 text-base">Staf Waiter & Pelayanan FnB</h3>
+                            <p class="text-xs text-blue-600 font-semibold mb-2">Industri Makanan & Minuman | Bandung</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
+                                <li>Sambut dan melayani pelanggan (*dine-in/takeaway*) dengan ramah, cepat, dan sopan.</li>
+                                <li>Mencatat pesanan menu, menyajikan makanan dan minuman sesuai standar kebersihan (*hygiene*).</li>
+                                <li>Menjaga kebersihan area meja makan, peralatan restoran, dan area kerja operasional.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Packing Sepatu -->
+                        <div class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
+                            <div class="absolute left-[-5px] top-1.5 w-3 h-3 bg-slate-400 rounded-full border-2 border-white"></div>
+                            <h3 class="font-bold text-slate-900 text-base">Staf Packing Produk Sepatu</h3>
+                            <p class="text-xs text-blue-600 font-semibold mb-2">Operasional Gudang & Toko Sepatu | Bandung</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
+                                <li>Melakukan pemilahan, pengecekan kualitas (*Quality Control*), dan kerapihan kondisi sepatu sebelum dikemas.</li>
+                                <li>Melakukan pengemasan (*packing*) dus dan kemasan luar secara cepat dan aman sesuai standar kirim.</li>
+                                <li>Membantu pencatatan keluar-masuk stok sepatu di area penyimpanan gudang/toko.</li>
+                            </ul>
+                        </div>
+
+                        <!-- ShopeeFood Driver -->
+                        <div class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
+                            <div class="absolute left-[-5px] top-1.5 w-3 h-3 bg-slate-400 rounded-full border-2 border-white"></div>
+                            <h3 class="font-bold text-slate-900 text-base">Mitra Pengemudi / Kurir ShopeeFood</h3>
+                            <p class="text-xs text-blue-600 font-semibold mb-2">Layanan Pengiriman Makanan | Bandung</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
+                                <li>Mengambil pesanan dari merchant FnB dan mengantarkannya ke pelanggan dengan tepat waktu.</li>
+                                <li>Menjaga kondisi kebersihan dan keamanan makanan selama perjalanan sampai ke pemesan.</li>
+                                <li>Memahami navigasi area Bandung dan sekitarnya dengan responsif dan efisien.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pedagang Sayur -->
+                        <div class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
+                            <div class="absolute left-[-5px] top-1.5 w-3 h-3 bg-slate-400 rounded-full border-2 border-white"></div>
+                            <h3 class="font-bold text-slate-900 text-base">Wiraswasta / Pedagang Sayuran</h3>
+                            <p class="text-xs text-blue-600 font-semibold mb-2">Pasar Tradisional / Lokal | Bandung</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
+                                <li>Menjalankan pengadaan barang harian dari pemasok serta melakukan negosiasi harga.</li>
+                                <li>Melayani pelanggan pasar secara ramah guna membangun hubungan serta langganan tetap.</li>
+                                <li>Mengelola pencatatan keuangan harian untuk memantau kas modal dan pendapatan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-slate-900 text-white p-4 text-center text-[10px] uppercase tracking-widest font-semibold">
+            <span>Rangga Wisnu &bull; Curriculum Vitae</span>
+        </div>
+    </div>
+
+</body>
+</html>
